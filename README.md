@@ -3,7 +3,7 @@
 ## Description
 This repository is a concurrent program that uses shared memory and three processes (P1, P2, P3) to calculate the determinant of a 3x3 matrix of integers.
 
-The mtrix M is denoted as:
+The matrix M is denoted as:
 ```
 M = a b c  
     d e f  
@@ -15,7 +15,7 @@ When the program begins, each process will perform a compuation and, at the same
 - P2 = b(fg-di)
 - P3 = c(dh-eg)
 
-When all the calculations are finished, all the processes are summed together to find the determinant of Matrix M. Overall, the program will print the following,
+When all the calculations are finished, all the processes are summed together to find the determinant (denoted as R) of Matrix M. Overall, the program will print the following,
 - the current process that is running,
 - the determinant of the matrix,
 - the largest integer in the matrix
@@ -35,7 +35,7 @@ $ ./DET
 ```
 
 ## Instructions
-To change the input of the matrix, simply locate the matrix under the file ```DET.c``` line 44, and change the numeric values. Below is a clearer representation of how the matrix is formatted.
+To change the input of the matrix, simply locate the matrix under the file ```DET.c``` line 44, and change the numeric values. Below is an example of how the matrix is formatted.
 
 If you wanted this matrix: 
 ```
@@ -45,7 +45,7 @@ M = 20 20 50
 ```
 then change line 44 to ```int M[3][3] = {{20, 20, 50}, {10, 6, 70}, {40, 3, 2}};```
 
-### Example of output
+## Example of output
 Matrix:
 ```
 M = 20 20 50 
